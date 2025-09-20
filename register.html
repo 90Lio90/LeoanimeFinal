@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عالم الأنمي - إنشاء حساب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1><i class="fas fa-star"></i> عالم الأنمي</h1>
+            <p>اكتشف أفضل الأنمي والمانجا</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                <li><a href="services.html"><i class="fas fa-cogs"></i> خدماتنا</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a></li>
+                <li><a href="register.html" class="active"><i class="fas fa-user-plus"></i> إنشاء حساب</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Section: Register -->
+            <section class="register-section">
+                <div class="register-container">
+                    <div class="register-header">
+                        <h2><i class="fas fa-user-plus"></i> إنشاء حساب جديد</h2>
+                        <p>انضم إلى مجتمع محبي الأنمي</p>
+                    </div>
+
+                    <!-- Register Form -->
+                    <form class="register-form" method="post" action="#">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">
+                                    <i class="fas fa-user"></i> الاسم الأول
+                                </label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lastName">
+                                    <i class="fas fa-user"></i> الاسم الأخير
+                                </label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">
+                                <i class="fas fa-at"></i> اسم المستخدم
+                            </label>
+                            <input type="text" id="username" name="username" required>
+                            <small class="form-hint">يجب أن يكون 3-20 حرف، حروف وأرقام فقط</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="registerEmail">
+                                <i class="fas fa-envelope"></i> البريد الإلكتروني
+                            </label>
+                            <input type="email" id="registerEmail" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> رقم الهاتف
+                            </label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="registerPassword">
+                                    <i class="fas fa-lock"></i> كلمة المرور
+                                </label>
+                                <input type="password" id="registerPassword" name="password" required>
+                                <small class="form-hint">8 أحرف على الأقل، تتضمن حروف وأرقام</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmPassword">
+                                    <i class="fas fa-lock"></i> تأكيد كلمة المرور
+                                </label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthDate">
+                                <i class="fas fa-calendar"></i> تاريخ الميلاد
+                            </label>
+                            <input type="date" id="birthDate" name="birthDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="favoriteGenre">
+                                <i class="fas fa-heart"></i> النوع المفضل من الأنمي
+                            </label>
+                            <select id="favoriteGenre" name="favoriteGenre">
+                                <option value="">اختر النوع المفضل</option>
+                                <option value="action">أكشن</option>
+                                <option value="adventure">مغامرة</option>
+                                <option value="comedy">كوميديا</option>
+                                <option value="drama">دراما</option>
+                                <option value="fantasy">خيال</option>
+                                <option value="romance">رومانسي</option>
+                                <option value="sci-fi">خيال علمي</option>
+                                <option value="horror">رعب</option>
+                                <option value="slice-of-life">شريحة من الحياة</option>
+                            </select>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                <span class="checkmark"></span>
+                                أوافق على <a href="#terms">الشروط والأحكام</a>
+                            </label>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                أريد تلقي النشرة الإخبارية
+                            </label>
+                        </div>
+
+                        <button type="submit" class="register-btn">
+                            <i class="fas fa-user-plus"></i> إنشاء الحساب
+                        </button>
+                    </form>
+
+                    <!-- Login Link -->
+                    <div class="login-link">
+                        <p>لديك حساب بالفعل؟ <a href="login.html">تسجيل الدخول</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Aside: Registration Benefits -->
+            <aside class="registration-benefits">
+                <h3><i class="fas fa-gift"></i> مميزات العضوية</h3>
+                <div class="benefit-item">
+                    <i class="fas fa-list benefit-icon"></i>
+                    <div>
+                        <h4>قوائم شخصية</h4>
+                        <p>إنشاء وإدارة قوائم الأنمي المفضلة</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-star benefit-icon"></i>
+                    <div>
+                        <h4>تقييمات ومراجعات</h4>
+                        <p>شارك آرائك وتقييماتك</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-users benefit-icon"></i>
+                    <div>
+                        <h4>مجتمع تفاعلي</h4>
+                        <p>تفاعل مع محبي الأنمي الآخرين</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-bell benefit-icon"></i>
+                    <div>
+                        <h4>إشعارات مخصصة</h4>
+                        <p>تنبيهات للحلقات والأخبار الجديدة</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>عالم الأنمي</h4>
+                    <p>موقعك المفضل لكل ما يخص الأنمي والمانجا</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="services.html">خدماتنا</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 عالم الأنمي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- No JavaScript - Pure HTML/CSS Website -->
+</body>
+</html>
+
